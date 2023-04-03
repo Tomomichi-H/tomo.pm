@@ -2,4 +2,4 @@
 
 ## Posts:
 
-* [Spotting A Fake ThinkPad Classic Keyboard](./fake-keyboard/README.md)
+* [Spotting A Fake ThinkPad Classic Keyboard](./fake-keyboards/README.md)
