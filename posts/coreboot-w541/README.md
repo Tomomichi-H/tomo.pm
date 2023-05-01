@@ -499,7 +499,7 @@ diff bottom_03.bin bottom_02.bin
 Again, there shouldn't be any output, and if so, power down the Pi, disconnect the clip, reattach it, and try connecting it again. Now we write the bottom image to the chip:
 
 ```sh
-fr -c "$CHIP" -w coreboot_bottom.bin
+fr -c "$CHIP" -w coreboot_bottom.rom
 ```
 
 It should read, write, and validate all successfully. When it completes, power down the Pi, disconnect its power, then place the clip on the top BIOS chip, and `ssh` back into it:
@@ -521,7 +521,7 @@ diff top_03.bin top_02.bin
 And if there's no output from the diff, write the coreboot top image:
 
 ```sh
-fr -c "$CHIP" -w coreboot_top.bin
+fr -c "$CHIP" -w coreboot_top.rom
 ```
 
 This one will take a little longer, since the image is twice the size of the bottom, but when it finishes, shut down the Pi, disconnect its power, remove the clip, and you can begin reassembling the W541.
